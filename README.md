@@ -2,7 +2,7 @@
 
 ### Installation (NodeJS only)
 ```
-$ npm i @itchatapp/client
+$ npm i @itchatapp/components
 ```
 
 ### Example Usage
@@ -11,5 +11,6 @@ soon
 ```
 
 
-### Resources
-- [Docs](https://docs.itchat.world/itchat.js)
+### DOCS
+- [ITCHAT.JS](https://docs.itchat.world/itchat.js)
+- [@itchatapp/components](https://docs.itchat.world/itchat.js)
