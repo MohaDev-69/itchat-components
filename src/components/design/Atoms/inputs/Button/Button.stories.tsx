@@ -5,12 +5,13 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ButtonComponent } from '.';
 
 interface ButtonProps {
-    href: string,
+    hrefURL: string,
     openInNewTab: boolean,
     Size: string,
     text: string,
+    color: string,
+    BtnIcon: string,
     onClick: () => void
-
 }
 
 export default {
