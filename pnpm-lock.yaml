@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.18.6
-  '@mantine/core': ^4.2.10
+  '@mantine/core': ^4.2.12
   '@mantine/dates': ^4.2.10
   '@mantine/dropzone': ^4.2.10
   '@mantine/form': ^4.2.10
@@ -22,8 +22,10 @@ specifiers:
   '@storybook/testing-library': ^0.0.13
   '@types/react': ^18.0.15
   babel-loader: ^8.2.5
+  css-modules-typescript-loader: ^4.0.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  scss: ^0.2.4
   typescript: ^4.7.4
 
 dependencies:
@@ -37,6 +39,7 @@ dependencies:
   '@mantine/prism': 4.2.12_n5fi23fjjzlwcbqhnnpdtjftw4
   '@mantine/rte': 4.2.12_n5fi23fjjzlwcbqhnnpdtjftw4
   '@mantine/spotlight': 4.2.12_n5fi23fjjzlwcbqhnnpdtjftw4
+  scss: 0.2.4
 
 devDependencies:
   '@babel/core': 7.18.6
@@ -50,6 +53,7 @@ devDependencies:
   '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
   '@types/react': 18.0.15
   babel-loader: 8.2.5_@babel+core@7.18.6
+  css-modules-typescript-loader: 4.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.7.4
@@ -5351,6 +5355,13 @@ packages:
       webpack: 4.46.0
     dev: true
 
+  /css-modules-typescript-loader/4.0.1:
+    resolution: {integrity: sha512-vXrUAwPGcRaopnGdg7I5oqv/NSSKQRN5L80m3f49uSGinenU5DTNsMFHS+2roh5tXqpY5+yAAKAl7A2HDvumzg==}
+    dependencies:
+      line-diff: 2.1.1
+      loader-utils: 1.4.0
+    dev: true
+
   /css-select/4.3.0:
     resolution: {integrity: sha512-wPpOYtnsVontu2mODhA19JrqWxNsfdatRKd64kmpRbQgh1KtItko5sTnEpPdpSaJszTOhEMlF/RPz28qj4HqhQ==}
     dependencies:
@@ -7597,12 +7608,22 @@ packages:
       dotenv-expand: 5.1.0
     dev: true
 
+  /levdist/1.0.0:
+    resolution: {integrity: sha512-YguwC2spb0pqpJM3a5OsBhih/GG2ZHoaSHnmBqhEI7997a36buhqcRTegEjozHxyxByIwLpZHZTVYMThq+Zd3g==}
+    dev: true
+
   /levn/0.3.0:
     resolution: {integrity: sha512-0OO4y2iOHix2W6ujICbKIaEQXvFQHue65vUG3pb5EUomzPI90z9hsA1VsO/dbIIpC53J8gxM9Q4Oho0jrCM/yA==}
     engines: {node: '>= 0.8.0'}
     dependencies:
       prelude-ls: 1.1.2
       type-check: 0.3.2
+    dev: true
+
+  /line-diff/2.1.1:
+    resolution: {integrity: sha512-vswdynAI5AMPJacOo2o+JJ4caDJbnY2NEqms4MhMW0NJbjh3skP/brpVTAgBxrg55NRZ2Vtw88ef18hnagIpYQ==}
+    dependencies:
+      levdist: 1.0.0
     dev: true
 
   /lines-and-columns/1.2.4:
@@ -8345,6 +8366,11 @@ packages:
   /objectorarray/1.0.5:
     resolution: {integrity: sha512-eJJDYkhJFFbBBAxeh8xW+weHlkI28n2ZdQV/J/DNfWfSKlGEf2xcfAbZTv3riEXHAhL9SVOTs2pRmXiSTf78xg==}
     dev: true
+
+  /ometa/0.2.2:
+    resolution: {integrity: sha512-LZuoK/yjU3FvrxPjUXUlZ1bavCfBPqauA7fsNdwi+AVhRdyk2IzgP3JRnevvjzQ6fKHdUw8YISshf53FmpHrng==}
+    engines: {node: '>= 0.2.0'}
+    dev: false
 
   /on-finished/2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
@@ -9703,6 +9729,13 @@ packages:
       ajv: 6.12.6
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
+
+  /scss/0.2.4:
+    resolution: {integrity: sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A==}
+    engines: {node: '>= 0.2.0'}
+    dependencies:
+      ometa: 0.2.2
+    dev: false
 
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
