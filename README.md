@@ -6,8 +6,14 @@ $ npm i @itchatapp/components
 ```
 
 ### Example Usage
-```ts
-soon
+```tsx
+import React from 'react';
+import {} from '@itchatapp/components';
+export const App = () => {
+    return (
+        <div>Soon</div>
+    )
+}
 ```
 
 
